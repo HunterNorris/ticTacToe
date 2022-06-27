@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter's Tic-Tac-Toe game</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+    <h1>A game of Tic Tac Toe</h1>
+    <div id = "menu">
+        <button id='clear-board'>Clear the Board</button>
+        <select id = "players">
+            <option value="null">number of players</option>
+            <option value="one">one</option>
+            <option value="two">two</option>
+        </select>
+    </div>
+    <br>
+    <table id="board">
+        <tr>
+            <td data-index-number="1" id=""></td>
+            <td data-index-number="2" id=""></td>
+            <td data-index-number="3" id=""></td>
+        </tr>
+        <tr>
+            <td data-index-number="4" id=""></td>
+            <td data-index-number="5" id=""></td>
+            <td data-index-number="6" id=""></td>
+        </tr>
+        <tr>
+            <td data-index-number="7" id=""></td>
+            <td data-index-number="8" id=""></td>
+            <td data-index-number="9" id=""></td>
+        </tr>
+    </table>
+
+    <div id="congrats" class="hide">
+        <h3 id="congrats-text">`Congratulations ${currentPlayer}`</h3>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
